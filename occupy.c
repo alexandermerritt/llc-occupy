@@ -157,7 +157,7 @@ int test_rand_list(size_t from, size_t to, size_t incr)
             if (__test_rand_list(at, &v[i]))
                 return 1;
         }
-        printf("%ld %.2lf\n", at, mean(v, niter));
+        printf("bytes %ld cycles %.2lf\n", at, mean(v, niter));
     }
     return 0;
 }
