@@ -102,7 +102,7 @@ int __test_rand_list(size_t l3, double *cycles)
     if (!nodes) return 1;
 
     // randomize node order
-    int *idx = calloc(nlines, sizeof(struct node));
+    int *idx = calloc(nlines, sizeof(*idx));
     if (!idx) return 1;
     for (int i = 0; i < nlines; i++)
         idx[i] = i;
